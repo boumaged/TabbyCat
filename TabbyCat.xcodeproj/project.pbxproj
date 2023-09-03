@@ -11,6 +11,12 @@
 		1A5D6B062A9B60E90032690A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D6B052A9B60E90032690A /* ContentView.swift */; };
 		1A5D6B082A9B60EC0032690A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D6B072A9B60EC0032690A /* Assets.xcassets */; };
 		1A5D6B0B2A9B60EC0032690A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D6B0A2A9B60EC0032690A /* Preview Assets.xcassets */; };
+		1A5D6B132A9B614E0032690A /* CatFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D6B122A9B614E0032690A /* CatFactsView.swift */; };
+		1A5D6B152A9B615B0032690A /* CatImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D6B142A9B615B0032690A /* CatImagesView.swift */; };
+		1A5D6B172A9B61680032690A /* CatBounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D6B162A9B61680032690A /* CatBounceView.swift */; };
+		1A5D6B192A9B61730032690A /* CatGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D6B182A9B61730032690A /* CatGalleryView.swift */; };
+		1A5D6B1C2A9B644A0032690A /* CatFactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D6B1B2A9B644A0032690A /* CatFactsManager.swift */; };
+		1A5D6B1E2A9B67330032690A /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5D6B1D2A9B67330032690A /* CatFact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		1A5D6B052A9B60E90032690A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A5D6B072A9B60EC0032690A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A5D6B0A2A9B60EC0032690A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A5D6B122A9B614E0032690A /* CatFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsView.swift; sourceTree = "<group>"; };
+		1A5D6B142A9B615B0032690A /* CatImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImagesView.swift; sourceTree = "<group>"; };
+		1A5D6B162A9B61680032690A /* CatBounceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBounceView.swift; sourceTree = "<group>"; };
+		1A5D6B182A9B61730032690A /* CatGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGalleryView.swift; sourceTree = "<group>"; };
+		1A5D6B1B2A9B644A0032690A /* CatFactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsManager.swift; sourceTree = "<group>"; };
+		1A5D6B1D2A9B67330032690A /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		1A5D6B022A9B60E90032690A /* TabbyCat */ = {
 			isa = PBXGroup;
 			children = (
-				1A5D6B032A9B60E90032690A /* TabbyCatApp.swift */,
+				1A5D6B1A2A9B642A0032690A /* ViewModel and Model */,
 				1A5D6B052A9B60E90032690A /* ContentView.swift */,
+				1A5D6B112A9B612C0032690A /* Views */,
+				1A5D6B032A9B60E90032690A /* TabbyCatApp.swift */,
 				1A5D6B072A9B60EC0032690A /* Assets.xcassets */,
 				1A5D6B092A9B60EC0032690A /* Preview Content */,
 			);
@@ -65,6 +79,26 @@
 				1A5D6B0A2A9B60EC0032690A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A5D6B112A9B612C0032690A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A5D6B122A9B614E0032690A /* CatFactsView.swift */,
+				1A5D6B142A9B615B0032690A /* CatImagesView.swift */,
+				1A5D6B162A9B61680032690A /* CatBounceView.swift */,
+				1A5D6B182A9B61730032690A /* CatGalleryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A5D6B1A2A9B642A0032690A /* ViewModel and Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A5D6B1B2A9B644A0032690A /* CatFactsManager.swift */,
+				1A5D6B1D2A9B67330032690A /* CatFact.swift */,
+			);
+			path = "ViewModel and Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5D6B192A9B61730032690A /* CatGalleryView.swift in Sources */,
 				1A5D6B062A9B60E90032690A /* ContentView.swift in Sources */,
+				1A5D6B1E2A9B67330032690A /* CatFact.swift in Sources */,
+				1A5D6B1C2A9B644A0032690A /* CatFactsManager.swift in Sources */,
+				1A5D6B172A9B61680032690A /* CatBounceView.swift in Sources */,
+				1A5D6B132A9B614E0032690A /* CatFactsView.swift in Sources */,
 				1A5D6B042A9B60E90032690A /* TabbyCatApp.swift in Sources */,
+				1A5D6B152A9B615B0032690A /* CatImagesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -270,7 +310,7 @@
 				DEVELOPMENT_TEAM = 63S3JKC92E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TabbyCat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +339,7 @@
 				DEVELOPMENT_TEAM = 63S3JKC92E;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = TabbyCat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
